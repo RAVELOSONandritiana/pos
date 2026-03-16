@@ -1,0 +1,21 @@
+projet full stack avec sveltekit et prisma
+
+projet de gestion de commerce pos
+
+    base de donne avec prisma
+    crud produit
+    taxe modifiable
+    prix modifiable
+    design elegante et responsive avec tailwindcss
+    impression ticket de caisse
+    sauvegarde dans la base avec historique
+    dashboard profesionnel et informatif
+    interface vendeur et admin bien separer, seule le admin peut moifier les taxes et les prix ainsi que crud produit
+    vendeur peut seulement vendre et voir les produits
+    dashboard aussi est special admin
+    dans dashboard ajouter suivi complet des traffics d'argent et produit pour eviter que les vendeurs nous trahissent
+    compte securiser
+    module de paiement master card, bancaire et mobile money mais aussi espece
+    client repertorie et aussi anonyme si client pas necessaire a enregistrer
+    le logo de l'app et le titre soit configurable depuis le admin
+    possibilite de scanner des produit en utilisant code bar donc on creer des groupes de produit et en generer son code bar
