@@ -85,8 +85,8 @@
   <!-- Main Content -->
   <main class="flex-1 flex flex-col min-w-0 relative h-screen overflow-hidden">
     <!-- Header -->
-    <header class="h-20 border-b border-gray-100 bg-white/80 backdrop-blur-md flex items-center justify-between px-8 z-30 no-print">
-      <div class="flex items-center gap-4">
+    <header class="h-20 border-b border-gray-100 bg-white/70 backdrop-blur-xl flex items-center justify-between px-8 z-30 no-print">
+      <div class="flex items-center gap-6">
         <Button 
           variant="ghost" 
           size="icon" 
@@ -95,21 +95,27 @@
         >
           {isSidebarOpen ? '✖️' : '☰'}
         </Button>
-        <div>
-          <h2 class="text-lg font-bold text-gray-900">
+        <div class="flex flex-col">
+          <h2 class="text-xl font-black text-gray-900 tracking-tight leading-none">
             {filteredNav.find(n => n.path === page.url.pathname)?.name || 'Point de Vente'}
           </h2>
-          <p class="text-xs text-gray-400 font-medium">Bon retour, {currentUserState?.username} !</p>
+          <p class="text-[10px] text-gray-400 font-black uppercase tracking-widest mt-1">
+            Session active: {currentUserState?.username}
+          </p>
         </div>
       </div>
 
-      <div class="flex items-center gap-4">
-        <div class="px-4 py-2 bg-emerald-50 text-emerald-600 rounded-xl border border-emerald-100 flex items-center gap-2">
+      <div class="flex items-center gap-6">
+        <div class="hidden sm:flex items-center gap-2 px-4 py-2 bg-emerald-50 text-emerald-600 rounded-2xl border border-emerald-100 shadow-sm shadow-emerald-50">
           <span class="relative flex h-2 w-2">
             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
             <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
           </span>
-          <span class="text-xs font-bold uppercase tracking-wider">Store Online</span>
+          <span class="text-[10px] font-black uppercase tracking-[0.15em]">Terminal Connecté</span>
+        </div>
+        
+        <div class="w-10 h-10 rounded-2xl bg-gray-50 flex items-center justify-center text-xl cursor-pointer hover:bg-gray-100 transition-colors border border-gray-100">
+          🔔
         </div>
       </div>
     </header>

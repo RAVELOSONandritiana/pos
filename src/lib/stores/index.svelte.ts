@@ -8,10 +8,10 @@ export const categoriesState = $state<Category[]>([
 ]);
 
 export const productsState = $state<Product[]>([
-    { id: '1', name: 'Coca Cola 33cl', price: 15.5, barcode: '5449000000996', categoryId: '1', stock: 100 },
-    { id: '2', name: 'Fanta 33cl', price: 14.5, barcode: '5449000012487', categoryId: '1', stock: 80 },
+    { id: '1', name: 'Coca Cola 33cl', price: 15.5, barcode: '5449000000996', categoryId: '1', stock: 100, image: '/products/coca-cola.png' },
+    { id: '2', name: 'Fanta 33cl', price: 14.5, barcode: '5449000012487', categoryId: '1', stock: 80, image: '/products/fanta.png' },
     { id: '3', name: 'Chips Lay\'s Classic', price: 12.0, barcode: '8410199000213', categoryId: '2', stock: 50 },
-    { id: '4', name: 'Batterie Externe 10000mAh', price: 150.0, barcode: '6934177708510', categoryId: '3', stock: 20 },
+    { id: '4', name: 'Batterie Externe 10000mAh', price: 150.0, barcode: '6934177708510', categoryId: '3', stock: 20, image: '/products/powerbank.png' },
     { id: '5', name: 'Pain de Mie', price: 5.5, barcode: '3222472888631', categoryId: '4', stock: 30 },
 ]);
 
